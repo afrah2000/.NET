@@ -1,0 +1,22 @@
+<div *ngFor="let product of productDetails" style="float:left;">
+  <div class="container">
+    <div class="row">
+      <div class="col col-3 col-sm-6 col-md-3">
+  <div class="card"  style="width: 40rem; margin:50px;">
+    <img  [src]="product.image" class="prodimage">
+    <div class="card-body">
+     
+      <h5 style="font-size: 25px;color:rgb(35, 35, 168);"class="card-title">{{product.pname}}</h5>
+      <p [ngStyle]="{color:mycolor}" class="card-text">{{product.pdescription}}</p>
+
+      <div class="card-state" [ngSwitch]="product.status">
+      <p *ngSwitchCase="'Instock'" class="text-success">{{product.status}}</p>
+      <p *ngSwitchCase="'Out of Stock'" class="text-danger">{{product.status}}</p>
+    </div>
+      <a href="#" class="btn btn-warning">Buy</a>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>

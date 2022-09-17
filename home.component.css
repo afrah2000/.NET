@@ -1,0 +1,35 @@
+img {
+  height: 400px;
+  border-radius: 0%;
+  }
+  * {
+  box-sizing: border-box;
+  }
+  
+   
+  /* Create three equal columns that floats next to each other */
+  .column {
+  border-style: double;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+  }
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  h2{
+  font-size:40px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-style: double;
+  }
+  
+  h5{
+  font-size:100px;
+   
+  
+  }
+  p{font-size: 25px;}

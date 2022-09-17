@@ -1,0 +1,18 @@
+ 
+.prodimg{
+    height: 200px;
+    width:200px;
+    margin-top: 100px;
+
+}  
+.prodimage{
+    height:250px;
+    width:250px;
+    right:50%;
+    margin-top: 10px;
+    border-style: inset ;
+   
+
+}  
+.col-lg-7{font-size: 20px;}
+ 

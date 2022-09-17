@@ -1,0 +1,36 @@
+<div *ngFor="let product of product">
+    <div class="row">
+        <div class="col col-lg-3">
+        <img style="margin-left:80px;" [src]="product.image" class="prodimg">
+        </div>
+        
+        <div class="card col-lg-6">
+            <div class="card-body col-lg-12">
+                <div class="row" style="border-style:solid;border-color:black;border-radius:15px;">
+                    <div class="col-lg-7">
+                       <img [src]="product.image" class="prodimage">
+                    </div>
+                    <div class="col-lg-7">
+                        <div>
+                            Product: {{product.pname}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                            <a href="#" class="btn btn-warning">Buy</a>
+                        </div>
+                        <br>
+                        <div [hidden]="productdetails">
+                            Description: {{product.pdescription}}
+                            <br>
+                            Price: {{product.price | currency:'INR'}}
+                        </div>
+                        <br>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+        <img style="margin-left:80px;" [src]="product.image" class="prodimg">
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<!--STRING INTERPOLATION-->
+<!--PROPERTY BINDING IN img tag-->
+<a class="navbar-brand" href="#">
+<img [src]="logo" alt="baker">{{title}}</a>
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+aria-controls="navbarSupportedContent" aria-expanded="false"
+aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<!--href - render the entire page-->
+<!--SPA - Partial Rendering - routerLink-->
+<a class="nav-link active" aria-current="page"
+
+routerLink="">Home</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link active" routerLink="rev">Drinks</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active" routerLink="cards">Customized Cakes</a>
+    </li>
+<li class="nav-item dropdown">
+<a class="nav-link active dropdown-toggle" href="#"
+id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+aria-expanded="false">Desserts </a>
+
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+     
+<li><a class="dropdown-item" routerLink="rev" href="#">Pastry</a></li>
+<li><a class="dropdown-item"routerLink="collections" href="#">Cake</a></li>
+
+ 
+<li><a class="dropdown-item" routerLink="whip"href="#">Cupcakes</a></li>
+
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" href="#" tabindex="-1"
+
+aria-disabled="true">Call☎️</a>
+
+</li>
+</ul>
+<form class="d-flex">
+<input type="text" #productname placeholder="Enter item name"  style="font-family:italic;">&nbsp;
+
+<!--EVENT BINDING-->
+<button class="btn" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search 🔍</button>
+
+<br>
+&nbsp;&nbsp;&nbsp;
+<app-search [product]="productentered"></app-search>
+</form>
+</div>
+</div>
+</nav>
+<br>
+ 
+</body>

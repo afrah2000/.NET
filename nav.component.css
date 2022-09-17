@@ -1,0 +1,22 @@
+img{
+    height:100px;
+    width:100px;
+    }
+    .container-fluid{
+    background-color: rgb(128, 126, 126);
+    border-radius: 5px;
+    margin-top: 2px;
+    border-style: double;
+    font-size: 30px;
+    }
+    body{
+    background-color: rgb(254, 254, 254);
+    }
+    .btn{ padding: 30px 32px;
+    border-color: green;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;}
+    a{font-size: 40px;
+        border-style: double;
+    background-color: azure;}
