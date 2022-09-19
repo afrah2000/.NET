@@ -1,4 +1,4 @@
-<marquee>We Deliver Yummy Desserts. Order now!    </marquee>
+ <marquee>We also Deliver Yummy Desserts. Order now!    </marquee>
 <div style="margin-top: 30px;">
 <div class="row">
     <!--1st column-->
@@ -11,11 +11,11 @@
         <div *ngFor="let product of product">
         <div class="card-body col-lg-12">
             <div class="row" style="border-style:solid;border-color:black;border-radius:15px;">
-                <img [src]="product.image" class="prodimage">
-                <div class="col-lg-7">
-                  
                 
-                  
+                   <img [src]="product.image" class="prodimage">
+                 
+                <div class="col-lg-7">
+                    
                         Product: {{product.pname}}
                         <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
                         <a href="#" class="btn btn-warning" onclick="alert('Your order have been placed')">Buy</a>

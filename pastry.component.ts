@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import * as productdetails from '../data/product.json';
+import * as productdetails from '../data/pastry.json';
 @Component({
   selector: 'app-collections',
-  templateUrl: './collections.component.html',
-  styleUrls: ['./collections.component.css']
+  templateUrl: './pastry.component.html',
+  styleUrls: ['./pastry.component.css']
 })
-export class CollectionsComponent implements OnInit {
+export class PastryComponent implements OnInit {
 
   constructor() { }
 

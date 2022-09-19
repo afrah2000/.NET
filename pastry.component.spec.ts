@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhipComponent } from './whip.component';
+import { PastryComponent } from './pastry.component';
 
 describe('PastryComponent', () => {
-  let component: WhipComponent;
-  let fixture: ComponentFixture<WhipComponent>;
+  let component: PastryComponent;
+  let fixture: ComponentFixture<PastryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhipComponent ]
+      declarations: [ PastryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WhipComponent);
+    fixture = TestBed.createComponent(PastryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

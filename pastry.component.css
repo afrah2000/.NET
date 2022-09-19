@@ -1,10 +1,5 @@
  
-  .images {
-    float: left;
-    width: 30%;
-  } 
 .prodimg{
-    
     height: 200px;
     width:200px;
     margin-top: 100px;
@@ -12,12 +7,13 @@
 }  
 marquee{font-size: 40px;}
 .prodimage{
-    margin-left:15px;
     height:280px;
     width:320px;
-    float: right;
+    right:50%;
     margin-top: 10px;
     border-style: inset ;
+   
+
 }  
 .col-lg-7{font-size: 20px;}
  

@@ -1,21 +1,35 @@
-<div *ngFor="let product of product">
+
+     
+       
+        
+       
+
+
+
+
+    <marquee>We also Deliver Yummy Desserts. Order now!
+
+       
+        
+        </marquee>
+<div style="margin-top: 30px;">
     <div class="row">
+        <!--1st column-->
         <div class="col col-lg-3">
-        <img style="margin-left:80px;" [src]="product.image" class="prodimg">
+            <app-advertisement></app-advertisement>
         </div>
         
+        <!--2nd column-->
         <div class="card col-lg-6">
+            <div *ngFor="let product of product">
             <div class="card-body col-lg-12">
                 <div class="row" style="border-style:solid;border-color:black;border-radius:15px;">
+                    <img [src]="product.image" class="prodimage" style= "margin-top:0.5em; margin-bottom: 0.5em;" >
                     <div class="col-lg-7">
-                       <img [src]="product.image" class="prodimage">
-                    </div>
-                    <div class="col-lg-7">
-                        <div>
+                     
                             Product: {{product.pname}}
-                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
-                            <a href="#" class="btn btn-warning">Buy</a>
-                        </div>
+                          
+                            <a href="#" class="btn btn-warning" onclick="alert('Your order have been placed')">Buy</a>
                         <br>
                         <div [hidden]="productdetails">
                             Description: {{product.pdescription}}
@@ -23,14 +37,21 @@
                             Price: {{product.price | currency:'INR'}}
                         </div>
                         <br>
+                        <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        <app-counter></app-counter>
                    </div>
 
                 </div>
-            </div>
+            
+            
         </div>
-        <div class="col-lg-3">
-        <img style="margin-left:80px;" [src]="product.image" class="prodimg">
+     
+    </div>
+    </div>
+
+        <!--3rd column-->
+        <div class="col col-lg-3">
+            <app-ads></app-ads >
         </div>
-        
     </div>
 </div>

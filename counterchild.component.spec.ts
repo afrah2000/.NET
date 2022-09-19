@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhipComponent } from './whip.component';
+import { CounterchildComponent } from './counterchild.component';
 
-describe('PastryComponent', () => {
-  let component: WhipComponent;
-  let fixture: ComponentFixture<WhipComponent>;
+describe('CounterchildComponent', () => {
+  let component: CounterchildComponent;
+  let fixture: ComponentFixture<CounterchildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhipComponent ]
+      declarations: [ CounterchildComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WhipComponent);
+    fixture = TestBed.createComponent(CounterchildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

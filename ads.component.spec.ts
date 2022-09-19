@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhipComponent } from './whip.component';
+import { AdsComponent } from './ads.component';
 
-describe('PastryComponent', () => {
-  let component: WhipComponent;
-  let fixture: ComponentFixture<WhipComponent>;
+describe('AdsComponent', () => {
+  let component: AdsComponent;
+  let fixture: ComponentFixture<AdsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WhipComponent ]
+      declarations: [ AdsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WhipComponent);
+    fixture = TestBed.createComponent(AdsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
