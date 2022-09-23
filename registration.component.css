@@ -12,7 +12,7 @@ h4{
     font-size: 45px;
 }
  
- h2{color: rgb(107, 63, 6);
+ h2{color: rgb(232, 163, 72);
     font-size: 40px;
     }
  body{background-color: silver;}
@@ -22,8 +22,8 @@ h4{
     color: rgb(224, 223, 223);
     margin-left: 40px;
     margin-top: 100px}
- .ng-binding{font-size: 80px;
-    color: silver
+ .ng-binding{font-size: 20px;
+    color: rgb(230, 86, 86)
 ;
  }
  

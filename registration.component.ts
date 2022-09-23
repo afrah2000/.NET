@@ -1,16 +1,18 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-//npm install sweetalert2
 import Swal from 'sweetalert2';
-
 @Component({
   selector: 'app-register',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
+
+
+
 export class RegistrationComponent implements OnInit {
   //public registerForm!:FormGroup;
   userurl = environment.userapi;
@@ -26,10 +28,10 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-      username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
-      useremail: ['', Validators.required],
-      password: ['', Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(14)],
-      mobile: ['', Validators.required, Validators.pattern('[0-9]*')]
+      username: ['',[ Validators.required, Validators.pattern('[A-Za-z]*')]],
+      useremail: ['',[Validators.required,Validators.email]],
+      password: ['',[Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(14)]],
+      mobile: ['',[Validators.required, Validators.pattern('[0-9]*')]]
     });
   }
   get f() { return this.registerForm.controls; }

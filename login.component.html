@@ -9,20 +9,20 @@
                                 <h3 class="text-center secondary ms-mb-m main-heading ng-binding">Welcome back!</h3>
                                
                                 <div class="mt-5">
-                                <div class="form-group">
+                                 
                                     
                                     <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="User Email">
-                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
-                                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
-                                </div>
+                                    <label class="error ng-binding3" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
+                                    <label class="error ng-binding3" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
+                                 
                                 <br>
                                 <div class="form-group">
                                     <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
-                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
-                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                                    <label class="error ng-binding3" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                                    <label class="error ng-binding3" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
                                 </div>
                                 <br>
-                                <button type="submit" class="btn btn-warning" href="#">Login</button>
+                                <button type="submit" class="btn btn-warning" href="">Login</button>
                                 
                                 <div class="ms-fs-12 text-center ms-mt-x ms-mb-m forgot">
                                     <p style="padding-top:30px">

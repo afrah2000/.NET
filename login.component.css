@@ -40,13 +40,8 @@ form {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-form:hover {
-    color: rgb(69, 20, 45);
-    background-color: rgb(40, 40, 40);
-    transform:scale(1.2);
-
-}
+.ng-binding3{font-size: 20px;
+color: orangered;}
 .btn-warning
  {
     margin-left: 250px;
