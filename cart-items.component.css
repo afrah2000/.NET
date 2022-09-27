@@ -1,12 +1,14 @@
-.container-fluid{
-    background-color: white;
-}
+ 
 img{
-    height:100px;
-    width:100px;
+    height:200px;
+    width:200px;
 }
-h3{
+h3,h1,h2,h4{
     color:black;
-    font-size: 34px;
+    font-size: 40px;
 }
-.body{font-size: 100px;}
+body{font-size: 40px;
+}
+ 
+.col-lg-7{font-size:30px;}
+ h1{border-style: outset;}
